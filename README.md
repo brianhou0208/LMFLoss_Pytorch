@@ -41,6 +41,7 @@ print(f'FocalLoss :', focal_loss(predictions, targets).item())
 Our code is adapted from:
 * LDAM Loss : [official implementation of LDAM](https://github.com/kaidic/LDAM-DRW)
 * Focal Loss : [pytorch/torchvision](https://github.com/pytorch/vision/blob/main/torchvision/ops/focal_loss.py) and [fvcore](https://github.com/facebookresearch/fvcore/blob/main/fvcore/nn/focal_loss.py)
+
 Thanks for these authors for their valuable works.
 
 ## Contributions

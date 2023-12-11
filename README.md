@@ -29,14 +29,12 @@ lmf_loss = LMFLoss()
 ldam_loss = LDAMLoss()
 focal_loss = FocalLoss(alpha=1.0, gamma=1.5)
 
+predictions = model(inputs)
+
+# Compute the loss
 print(f'LMFLoss :', lmf_loss(predictions, targets).item())
 print(f'LDAMLoss :', ldam_loss(predictions, targets).item())
 print(f'FocalLoss :', focal_loss(predictions, targets).item())
-
-# Compute the loss
-predictions = model(inputs)
-loss = lmf_loss(predictions, targets)
-loss.backward()  # Backpropagation
 
 ```
 ## Acknowledgements
